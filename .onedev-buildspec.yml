@@ -1,0 +1,17 @@
+version: 19
+jobs:
+- name: sync
+  steps:
+  - !PullRepository
+    name: pull
+    remoteUrl: https://github.com/yjshen324/test
+    syncToChildProject: false
+    userName: yjshen324
+    refs: refs/heads/* refs/tags/*
+    withLfs: false
+    force: false
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 3600
