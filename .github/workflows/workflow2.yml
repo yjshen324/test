@@ -14,4 +14,4 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: build
-        run: echo this is workflow2
+        run: echo workflow2 ${{secrets.PASSWORD}}
