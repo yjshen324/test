@@ -8,6 +8,7 @@ on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: prod
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
