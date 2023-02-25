@@ -1,17 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: workflow1
+name: deploy
 
 # Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: push
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -22,4 +17,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: build
-        run: echo workflow1 ${{secrets.PASSWORD}}
+        run: |
+          cat test.txt
+          echo ${{secrets.PASSWORD}}
