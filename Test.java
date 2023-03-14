@@ -6,12 +6,18 @@ public class Test {
     // 1
     // 2
     // 3
+    // 7
+    // 8
+    // 9
   }
   
   public void method2() {
     // line1
     // line
     // 5
+    // 52
+    // 53
+    // 78
     // 6
     // 78
   }
