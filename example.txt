@@ -29,4 +29,29 @@ public shit gogo {
     // 7888
   }
   
+  public interface letsgo {
+    // 1
+    // 2
+    // 33
+    // 4
+    // 5
+    // 6
+    public void method2() {
+      // line1
+      // line
+      // 5
+      // 52
+      // 53
+      // 78
+      // 6
+      // 7888
+    }
+    // 1
+    // 2
+    // 33
+    // 4
+    // 5
+    // 6    
+  }
+  
 }
