@@ -1,17 +1,17 @@
 function f1() 
-  // line1
-  // line2
-  // line3
-  // line4
-  // line5
-  // line6
-  // line7
+// line1
+// line2
+// line3
+// line4
+// line5
+// line6
+// line7
   
 funcion f2() 
-  // line1
-  // line2
-  // line3
-  // line4
-  // line5
-  // line6
-  // line77
+// line1
+// line2
+// line3
+// line4
+// line5
+// line6
+// line77
