@@ -1,7 +1,7 @@
 public class Test {
   
   public void method1() {
-    // hello
+    // hello2
     // world
     // 1
     // 2
@@ -13,7 +13,7 @@ public class Test {
     // line
     // 5
     // 6
-    // 7
+    // 78
   }
   
 }
