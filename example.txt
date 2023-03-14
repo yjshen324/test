@@ -8,7 +8,7 @@ function f1()
 // line7
   
 // so what  
-func f2: 
+func f2 
 // line1
 // line2
 // line3
