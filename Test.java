@@ -6,7 +6,7 @@ public class Test {
   
   public void method2() {
     // line1
-    // line2
+    // line
   }
   
 }
