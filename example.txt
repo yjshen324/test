@@ -1,4 +1,4 @@
-public class Test {
+public shit gogo {
   
   public void method1() {
     // hello222
