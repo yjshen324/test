@@ -8,7 +8,7 @@ function f1()
 // line7
   
 // so what  
-func_f2
+func f2:
 ine1
 ine2
 ne3
