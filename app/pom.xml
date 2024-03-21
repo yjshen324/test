@@ -15,8 +15,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.apache.log4y.log2j</groupId>
-            <artifactId>log2j-shit</artifactId>
+            <groupId>com.apache.log4y.log4j</groupId>
+            <artifactId>log4j-shit</artifactId>
             <version>2.11.0</version>
         </dependency>
     </dependencies>
