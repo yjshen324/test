@@ -4,6 +4,7 @@
     "config:recommended"
   ],
   "baseBranches": ["main"],
-  "addLabels": ["dependency"] 
+  "addLabels": ["dependency"],
+  "reviewers": ["robinshine"]
 }
 
