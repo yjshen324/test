@@ -16,6 +16,24 @@ jobs:
     closeDashboardIssueWhenDone: false
     globalConfig: "module.exports = {\n    \"onboardingConfigFileName\": \"renovate.json\",\n    \"onboardingConfig\": { \n        \"extends\": [\"config:recommended\"] \n    },\n    \"optimizeForDisabled\": true\n};\n"
     condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !CommandStep
+    name: test1
+    runInContainer: true
+    image: alpine
+    interpreter: !DefaultInterpreter
+      commands: |
+        echo test1
+    useTTY: true
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !CommandStep
+    name: test2
+    runInContainer: true
+    image: alpine
+    interpreter: !DefaultInterpreter
+      commands: |
+        echo test2
+    useTTY: true
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
   retryCondition: never
   maxRetries: 3
   retryDelay: 30
