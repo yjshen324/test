@@ -1,0 +1,22 @@
+version: 37
+jobs:
+- name: ci
+  steps:
+  - !RenovateCacheStep
+    name: set up cache
+    key: renovate
+    uploadStrategy: UPLOAD_IF_CHANGED
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !RenovateStep
+    name: renovate
+    includeChildProjects: false
+    accessTokenSecret: access token
+    createDependencyDashboardIssue: false
+    dashboardIssueConfidential: false
+    closeDashboardIssueWhenDone: false
+    globalConfig: "module.exports = {\n    \"onboardingConfigFileName\": \"renovate.json\",\n    \"onboardingConfig\": { \n        \"extends\": [\"config:recommended\"] \n    },\n    \"optimizeForDisabled\": true\n};\n"
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 14400
