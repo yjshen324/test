@@ -23,6 +23,7 @@ jobs:
 - name: test
   triggers:
   - !BranchUpdateTrigger {}
+  - !PullRequestUpdateTrigger {}
   retryCondition: never
   maxRetries: 3
   retryDelay: 30
