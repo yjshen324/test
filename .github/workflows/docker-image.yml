@@ -7,10 +7,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-
-  test:
-
+  test1:
     runs-on: ubuntu-latest
-
     steps:
-    - run: echo hello
+    - run: echo test1
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo test2
